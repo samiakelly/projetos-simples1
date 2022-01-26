@@ -10,24 +10,60 @@
 <body>
     <div class="main-login">
         <div class="esquerda-login">
-            <h1>Faça login<br>E entre para a nossa comunidade</h1>
+            <h1>RACU<br>Faça cadastro e entre para a <br>nossa comunidade.</h1>
             <img src="racu.svg" class="imagem" alt="Racu">
         </div>
         <div class="direita-login">
             <div class="card-login">
                 <h1>Login</h1>
                 <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário" required>
+                    <label for="email">Email</label>
+                    <input type="text" name="usuario" placeholder="Email" required>
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha" required>
                 </div>
                 <button class="btn-login">Login</button>
+                <a href="" class="link">Esqueçeu sua senha?</a>
+                <div class="sugestao">
+                    <span>OU</span>
+                </div>
+                <button class="botaocadastro">Cadastrar</button>
             </div>
-
         </div>
     </div>
+    <div class="modal-container" id="modal-cadastro">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <div class="fundo">
+                <form>
+                    <input type="text" name="nome"  id="nome" placeholder="Nome completo" class="inputcadastro" required>
+                    <br><br>
+                    <input type="text" name="endereco"  id="endereco" placeholder="Cidade/Estado" class="inputcadastro" required>
+                    <br><br>
+                    <input type="text" name="bairro"  id="bairro" placeholder="Bairro" class="inputcadastro" required>
+                    <br><br>
+                    <input type="text" name="celular"  id="celular" placeholder="Celular" class="inputcadastro"  required>
+                    <br><br>
+                    <input type="email" name="email"  id="email" placeholder="email@exemplo.com" class="inputcadastro">
+                    <br><br>
+                    <input type="text" name="cpf"  id="cpf" placeholder="CPF" class="inputcadastro" required>
+                    <br><br>
+                    <input type="password" name="senha"  id="senha" placeholder="Senha" class="inputcadastro" required>
+                    <br><br>
+                    <p>Como deseja se cadastrar?</p>
+                    <input type="radio" id="amparado" name="usuario" value="amparado" required>
+                    <label for="amparado">Amparado</label>
+                    <input type="radio" id="contribuinte" name="usuario" value="contribuinte" required>
+                    <label for="contribuinte">Contribuinte</label>
+                    <br><br>
+                    <button class="botao" type="submit">Cadastrar</button>
+                </form>
+           </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
+
